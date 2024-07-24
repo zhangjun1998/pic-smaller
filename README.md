@@ -18,6 +18,11 @@ Pic smaller has been deployed to [`vercel`](https://vercel.com/), you can use it
 
 > [picsmaller.com](https://picsmaller.com/) is a new domain that has just been applied for. The old domain [txx.cssrefs.com](https://txx.cssrefs.com/) is still accessible, but will be expired on `2025-02-22` and payment will not continue. Please use the latest domain to access the service.
 
+## 技术
+- JPEG/WebP 压缩：利用了现代浏览器自带的功能，叫离屏渲染技术 OffscreenCanvas
+- PNG 压缩：采用了一个第三方的 Webassembly 实现，底层是 libPNG
+- Gif 压缩：采用了一个第三方的 Webassembly 实现，底层是 Gifsicle
+
 ## Develop
 
 Pic smaller is a [Vite](https://vitejs.dev/) + [React](https://react.dev/) project, you have to get familiar with them first. It uses modern browser technologies such as `OffscreenCanvas`, `WebAssembly`, and `Web Worker`. You should also be familiar with them before developing.
